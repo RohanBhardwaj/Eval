@@ -90,7 +90,42 @@ body{
     border-radius: 5px;
     margin-bottom: 10px;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
+
+.quiz-box .option-container .option.already-answered{
+    pointer-events: none;
+}
+
+ .quiz-box .option-container .option.correct::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(150, 240, 150,0.4);
+ }
+ .quiz-box .option-container .option.correct{
+     color: black;
+     
+ }
+ .quiz-box .option-container .option.wrong::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(146, 50, 38, 0.4);
+ }
+ .quiz-box .option-container .option.wrong{
+     color: black;
+     
+ }
+ 
+
 
 .result-box{
     max-width: 700px;
