@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="../quizCss/QuizCss.css">
 </head>
 <body>
-    <div class="box1 hide">
+    <div class="box1 ">
         <h2>Instructions:</h2>
         <p>Total number of questions: <strong>10</strong></p>
         <p>Only single correct answers <strong>No multi-correct</strong></p>
         <p>Read All the questions carefully!</p>
+        <p>Each question carries 1 mark</p>
+        <p>Selecting wrong answer will deduct <strong>0.5</strong> marks </p>
         <button type="button" class="start-btn">Start Quiz</button>
     </div>
 
@@ -32,6 +34,37 @@
             <button type="button" class="btn">Next</button>
         </div>
 
+    </div>
+    <div class="result-box">
+        <h1>Quiz Result</h1>
+        <table>
+            <tr>
+                <td>Total Question</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Attempted</td>
+                <td><span class="total-attempt">7</span></td>
+            </tr>
+            <tr>
+                <td>Correct</td>
+                <td><span class="total-correct">5</span></td>
+            </tr>
+            <tr>
+                <td>Wrong</td>
+                <td><span class="total-wrong">2</span></td>
+            </tr>
+            <tr>
+                <td>Time</td>
+                <td><span class="total-time">15min</span></td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td><span class="total-score">4 / 10</span></td>
+            </tr>
+        </table>
+        <button type="button" class="btn">Try Again</button>
+        <button type="button" class="btn">Back To Track</button>
     </div>
     <script src="../quizJs/JavaQuiz.js"></script>
 </body>
