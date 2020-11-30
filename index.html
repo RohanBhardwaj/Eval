@@ -1,55 +1,324 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="pg1_intro.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Eval - Let's Learn & Assess</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 
 </head>
-<body >
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#"><img src="C:\Users\Rohan\Desktop\Eval Project\sigma logo.png" width="30" height="30" class="d-inline-block align-top" alt="logo">Eval</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-  <ul class="navbar-nav mr-auto">
-    <li class="nav-item active">
-      <a class="nav-link">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link">About</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link">Contact</a>
-    </li>
-  </ul>
-  <ul class="navbar-nav ml-auto">
-    <li class="nav-item">
-      <a class="nav-link"><i class="fa fa-user-plus"></i>  SignUp</a>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i>  Login</a>
-      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="#">Teacher</a>
-        <a class="dropdown-item" href="#">Student</a>
-      </div>
-    </li>
-  </ul>
-</div>
-</nav>
-<div class="container" style="margin-left: 25px ; margin-right:25px">
-	<div class="row ">
-	<p class="col-sm-6 col-md-6 col-xl-8" style="
-    padding-top: 65px;
-">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-	<img class="col-sm-6 col-md-6 col-xl-4  "src="C:\Users\Rohan\Desktop\Eval Project\progress.jpg" width="550" height="400"   alt="progress"></div>
-	
-</div>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<body>
+    <header>
+    <div class="header" id="header">
+        <div class="header-inner" id="header-inner">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg my-navbar py-lg-0 py-sm-0 py-0 px-lg-0">
+                    <div class="logo">
+                    <img src="img/logo.png" alt="Logo">
+                    <a class="navbar-brand" href="#Home">EVAL</a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon" data-scroll = "out">
+                          <div id="nav-icon1">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                          </div>
+                      </span>
+                    </button>
+                    <div class="collapse navbar-collapse mobile-menu d-flex flex-lg-row flex-column flex-xl-row justify-content-lg-end justify-content-md-start" id="#navbarSupportedContent">
+                      <ul class="navbar-nav align-self-stretch">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#About">About</a>
+                          </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#Courses">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#Contact">Contact</a>
+                        </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0 ml-2 align-self-stretch">
+                          <a href="#" class="header-btn">Sign In</a>
+                      </form>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </div>
+        <div class="intro-section custom-owl-carousel" id="Home">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 mr-auto">
+                        <div class="owl-carousel slide-one-item-alt-text">
+                            <div class="slide-text">
+                                <h1>Learn From Industry Experts</h1>
+                                <p class="mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente debitis odio accusantium ullam, autem molestiae dicta voluptates</p>
+                                <p><a href="#" target="_blank" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
+                            </div>
+                            <div class="slide-text">
+                                <h1>Watch Our Video Lectures</h1>
+                                <p class="mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente debitis odio accusantium ullam, autem molestiae dicta voluptates</p>
+                                <p><a href="#" target="_blank" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
+                            </div>
+                            <div class="slide-text">
+                                <h1>Test Your Knowlegde</h1>
+                                <p class="mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente debitis odio accusantium ullam, autem molestiae dicta voluptates</p>
+                                <p><a href="#" target="_blank" class="btn btn-outline-light py-3 px-5">Get Started</a>
+                                </p>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 ml-auto mb-5 mt-n5">
+                        <div class="owl-carousel slide-one-item-alt">
+                            <img src="img/img_1.jpg" alt="Image" class="img-fluid">
+                            <img src="img/img_2.jpg" alt="Image" class="img-fluid">
+                            <img src="img/img_3.jpg" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="owl-custom-direction">
+                            <a href="#" class="custom-prev"><i class="fas fa-chevron-left"></i></a>
+                            <a href="#" class="custom-next"><i class="fas fa-chevron-right"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section  class="section-1 container-fluid p-0" id="About">
+            <div class="about text-center">
+                <h1>Accelerate Your Future With Us</h1>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="cards">
+                  <div class="d-flex flex-row justify-content-center flex-wrap">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="title">
+                          <h5 class="card-title">Read Tutorials</h5>
+                        </div>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing.
+                        </p>
+                        <div class="icon">
+                          <h1><i class="fab fa-leanpub"></i></h1>
+                          <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Read More</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="title">
+                          <h5 class="card-title">Watch Videos</h5>
+                        </div>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing.
+                        </p>
+                        <div class="icon">
+                          <h1><i class="fas fa-chalkboard-teacher"></i></h1>
+                          <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Read More</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="title">
+                          <h5 class="card-title">Practice Questions</h5>
+                        </div>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing.
+                        </p>
+                        <div class="icon">
+                          <h1><i class="fas fa-clipboard-check"></i></h1>
+                          <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Read More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <section class="section-2 container-fluid p-0" id="Courses">
+            <div class="cover">
+                <div class="overlay"></div>
+                <div class="content text-center">
+                  <h1>Our Most Popular Courses</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, eum?
+                  </p>
+                </div>
+              </div>
+              <div class="container-fluid text-center">
+                <div class="popcrs d-flex flex-md-row flex-wrap justify-content-center">
+                  <div class="rect">
+                    <h1>Physics</h1>
+                    <p>By Lorem Ipsum</p>
+                    <a href="#" class="btn px-5 py-2 primary-btn mb-5">View</a>
+                  </div>
+                  <div class="rect">
+                    <h1>Chemistry</h1>
+                    <p>By Lorem Ipsum</p>
+                    <a href="#" class="btn px-5 py-2 primary-btn mb-5">View</a>
+                  </div>
+                  <div class="rect">
+                    <h1>Mathematics</h1>
+                    <p>By Lorem Ipsum</p>
+                    <a href="#" class="btn px-5 py-2 primary-btn mb-5">View</a>
+                  </div>
+                  <!-- <div class="rect">
+                    <h1>9152</h1>
+                    <p>Total Projects</p>
+                  </div> -->
+                </div>
+              </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-fluid p-0" id="Contact">
+          <div class="row text-left">
+            <div class="col-xl-5 col-sm-8 mb-4">
+              <h4 class="text-light">About us</h4>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum maxime ea similique illum corrupti</p>
+              <p class="pt-4 text-muted">Copyright ©2020 All rights reserved | This template is made for Full Stack Project.
+              </p>
+            </div>
+            <div class="col-xl-4 col-sm-9 mb-5">
+              <h4 class="text-light">Newsletter</h4>
+              <p class="text-muted">Stay Updated</p>
+              <form class="form-inline">
+                <div class="col pl-0">
+                  <div class="input-group pr-5">
+                    <input type="text" class="form-control bg-dark text-white" id="inlineFormInputGroupUsername2" placeholder="Email">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="fas fa-arrow-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-xl-3 col-sm-12">
+              <h4 class="text-light">Follow Us</h4>
+              <p class="text-muted">Let's Connect</p>
+              <div class="column text-light">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script>
+
+    <script>
+        $('.slide-one-item-alt').owlCarousel({
+            center: false, 
+            items: 1,
+            dots: false,
+            loop: true,
+            margin: 0,
+            smartSpeed: 2000,
+            autoplay: true,
+            pauseOnHover: true,
+            onDragged: function(event){
+                console.log('event: ', event.relatedTarget['_drag']['direction'])
+                if (event.relatedTarget['_drag']['direction'] == 'left') {
+                    $('.slide-one-item-alt-text').trigger('next.owl.carousel');
+                }
+                else {
+                    $('.slide-one-item-alt-text').trigger('prev.owl.carousel');
+                }
+            } 
+        });
+
+        $('.slide-one-item-alt-text').owlCarousel({
+            center: false, 
+            items: 1,
+            dots: false,
+            loop: true,
+            margin: 0,
+            smartSpeed: 2000,
+            autoplay: true,
+            pauseOnHover: true,
+            onDragged: function(event){
+                console.log('event: ', event.relatedTarget['_drag']['direction'])
+                if (event.relatedTarget['_drag']['direction'] == 'left') {
+                    $('.slide-one-item-alt').trigger('next.owl.carousel');
+                }
+                else {
+                    $('.slide-one-item-alt').trigger('prev.owl.carousel');
+                }
+            } 
+        });
+
+        $('.custom-next').click(function(e) {
+            e.preventDefault();
+            $('.slide-one-item-alt').trigger('next.owl.carousel');
+            $('.slide-one-item-alt-text').trigger('next.owl.carousel');
+        });
+    
+        $('.custom-prev').click(function(e) {
+        e.preventDefault();
+        $('.slide-one-item-alt').trigger('prev.owl.carousel');
+        $('.slide-one-item-alt-text').trigger('prev.owl.carousel');
+        });
+
+    </script>
+
+<script>
+  
+    $(document).ready(function(){
+      $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+        $(this).toggleClass('ham-open');
+      });
+    });
+</script>
+  
+<script>
+
+$(document).ready(function(){
+    $('.navbar-toggler,.overlay').on("click",function(){
+    $(".mobile-menu,.overlay").toggleClass('open-nav');
+    });
+});
+</script>
+  
+<script>
+
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if($(window).scrollTop() < 60){
+        $('#header-inner').removeClass('navbar-scroll');
+        }else{
+        $('#header-inner').addClass('navbar-scroll');
+        }
+    });
+});
+</script>
+
 </body>
 </html>
