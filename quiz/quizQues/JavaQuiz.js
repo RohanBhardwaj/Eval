@@ -1,6 +1,6 @@
 const quiz =[
     {
-        q:`<img src="../quizJs/ER.png" width=100%;overflow="hidden">`,
+        q:`<img src="../quizQues/ER.png" width=100%;overflow="hidden">`,
         options:['a','bbbbbb','ccccccccc','ddd'],
         answer:0
     },

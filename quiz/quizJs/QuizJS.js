@@ -1,6 +1,9 @@
 var questionNumber = document.querySelector(".question-number");
 const questionText = document.querySelector(".question");
 const optionContainer = document.querySelector(".option-container");
+const quizBox = document.querySelector(".quiz-box");
+const resultBox = document.querySelector(".result-box");
+const StartBox = document.querySelector(".box1");
 
 let questionCounter =0;
 let currentQuestion;
@@ -71,11 +74,27 @@ function unclickableOptions(){
 
 function next(){
     if(questionCounter === quiz.length){
-        console.log("quiz over");
+        quizOver();
     }
     else{
         getNewQuestion();
     }
+}
+
+function quizOver(){
+    quizBox.classList.add("hide");
+    resultBox.classList.remove("hide");
+    quizResult();
+}
+
+function quizResult(){
+    
+}
+
+
+function startQuiz(){
+  StartBox.classList.toggle("hide");
+  quizBox.classList.toggle("hide");
 }
 
 window.onload = function(){

@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="../quizCss/QuizCss.css">
 </head>
 <body>
-    <div class="box1 ">
+    <div class="box1">
         <h2>Instructions:</h2>
         <p>Total number of questions: <strong>10</strong></p>
         <p>Only single correct answers <strong>No multi-correct</strong></p>
         <p>Read All the questions carefully!</p>
         <p>Each question carries 1 mark</p>
         <p>Selecting wrong answer will deduct <strong>0.5</strong> marks </p>
-        <button type="button" class="start-btn">Start Quiz</button>
+        <button type="button" class="start-btn" onclick="startQuiz()">Start Quiz</button>
     </div>
 
-    <div class="quiz-box">
+    <div class="quiz-box hide">
         <div class="question-number">
             <!-- Question 1 of 5 -->
         </div>
@@ -35,7 +35,7 @@
         </div>
 
     </div>
-    <div class="result-box">
+    <div class="result-box hide">
         <h1>Quiz Result</h1>
         <table>
             <tr>
@@ -66,7 +66,7 @@
         <button type="button" class="btn">Try Again</button>
         <button type="button" class="btn">Back To Track</button>
     </div>
-    <script src="../quizJs/JavaQuiz.js"></script>
+    <script src="../quizQues/JavaQuiz.js"></script>
     <script src="../quizJs/QuizJS.js"></script>
 </body>
 </html>
