@@ -1,1 +1,0 @@
-alert("V paise do!")
