@@ -19,7 +19,7 @@ html {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
     position: relative;
     width: 100%;
-    background: white;
+    background: #6610f2;
 }
 
 .header-inner {
@@ -253,7 +253,8 @@ html {
 .jumbotron {
     margin-top: 110px;
     margin-left: 180px;
-    margin-right: 180px
+    margin-right: 180px;
+    background-color: aquamarine;
 }
 
 .text-center h2 {
