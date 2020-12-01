@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
 body {
     font-family: 'Poppins', sans-serif;
     min-width: 420px;
 }
 
+
 /* smooth scrolling */
+
 html {
     scroll-padding-top: 100px;
     scroll-behavior: smooth;
 }
 
+
 /* navbar */
+
 .header {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
     position: relative;
@@ -28,7 +31,9 @@ html {
     left: 0;
 }
 
+
 /* logo */
+
 .navbar img {
     height: 40px;
     width: 40px;
@@ -41,13 +46,10 @@ html {
     border-radius: 3px;
 }
 
+
 /* website name */
+
 .navbar-brand {
-<<<<<<< HEAD
-    font-size: 22px;
-    color: black !important;
-    font-family: 'Arial Narrow', 'Arial', 'sans-serif';
-=======
     color: #000;
     font-weight: 800;
     text-transform: uppercase;
@@ -57,14 +59,15 @@ html {
 
 .navbar-brand:hover {
     color: black;
->>>>>>> 6254e921809289c5c3a2d063926562ad3324d1de
 }
 
 .navbar-nav .nav-item {
     position: relative;
 }
 
+
 /* links*/
+
 .nav-item .nav-link {
     display: block;
     position: relative;
@@ -84,7 +87,9 @@ html {
     color: red;
 }
 
+
 /* button */
+
 .header-btn {
     background: #dc3545;
     border-color: #dc3545;
@@ -100,21 +105,25 @@ html {
     background: transparent;
 }
 
+
 /* responsive navbar */
+
 .navbar-scroll {
     position: fixed !important;
-    top:0% !important;
+    top: 0% !important;
     right: 0;
     left: 0;
-    z-index:779! important;
-    background-color:#fff !important;
+    z-index: 779! important;
+    background-color: #fff !important;
     padding: 0px 0;
-	transition: all 0.25s ease;
+    transition: all 0.25s ease;
     box-shadow: 0 0 6px #c0c0c0;
 }
 
 @media only screen and (min-width: 1200px) {
-    .nav-item .nav-link {padding: 25px 20px;}
+    .nav-item .nav-link {
+        padding: 25px 20px;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -128,8 +137,13 @@ html {
     }
 }
 
+
 /* hamburger animation */
-.navbar-toggler:focus, .navbar-toggler, .navbar-toggler-icon, .navbar-toggler-icon:focus {
+
+.navbar-toggler:focus,
+.navbar-toggler,
+.navbar-toggler-icon,
+.navbar-toggler-icon:focus {
     border: 0px solid transparent !important;
     box-shadow: none !important;
     outline: none !important;
@@ -159,17 +173,17 @@ html {
 }
 
 #nav-icon1 span:nth-child(1) {
-    top:0;
+    top: 0;
     width: 100%;
 }
 
 #nav-icon1 span:nth-child(2) {
-    top:9px;
+    top: 9px;
     width: 90%;
 }
 
 #nav-icon1 span:nth-child(3) {
-    top:18px;
+    top: 18px;
     width: 80%;
 }
 
@@ -213,33 +227,25 @@ html {
         padding-left: 10px;
         padding-top: 20px;
     }
-
     .mobile-menu .nav-link {
         margin-left: 20px;
     }
-
     .mobile-menu .form-inline .header-btn {
         margin-left: 20px;
     }
-
     .mobile-menu .form-inline .header-btn:hover {
         border-color: white;
         color: white;
     }
 }
 
+
 /* cross icon */
+
 .open-nav {
     transform: translateX(0%) !important;
 }
 
-<<<<<<< HEAD
-.jumbotron {
-    margin-top: 110px;
-    text-align: center;
-    padding: 20px 0;
-=======
 #maths {
     margin-top: 100px;
->>>>>>> 6254e921809289c5c3a2d063926562ad3324d1de
 }
