@@ -249,3 +249,9 @@ html {
 #maths {
     margin-top: 100px;
 }
+
+.jumbotron {
+    margin-top: 110px;
+    margin-left: 180px;
+    margin-right: 180px
+}
