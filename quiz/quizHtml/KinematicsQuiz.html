@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Quiz</title>
+    <link rel="stylesheet" href="../quizCss/QuizCss.css">
+</head>
+<body>
+    <div class="box1">
+        <h2>Instructions:</h2>
+        <p>Total number of questions: <strong><span class="noOfQues"></span></strong></p>
+        <p>Only single correct answers <strong>No multi-correct</strong></p>
+        <p>Read All the questions carefully!</p>
+        <p>Each question carries 1 mark</p>
+        <p>Selecting wrong answer will deduct <strong>0.5</strong> marks </p>
+        <button type="button" class="start-btn" onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div class="quiz-box hide">
+        <div class="question-number">
+            <!-- Question 1 of 5 -->
+            
+        </div>
+        <span class="timer">Time</span>
+        <div class="question">
+            <!-- Java is better than JavaScript -->
+        </div>
+        <div class="option-container">
+            <!-- <div class="option">Yes</div>
+            <div class="option">no ok yes</div>
+            <div class="option">Is this even a Question</div>
+            <div class="option">True positive Affermative</div> -->
+        </div>
+        <div class="next-question-btn">
+            <button type="button" class="btn" onclick="next()">Next</button>
+        </div>
+
+    </div>
+    <div class="result-box hide">
+        <h1>Quiz Result</h1>
+        <table>
+            <tr>
+                <td>Total Question</td>
+                <td><span class="total-question"></span></td>
+            </tr>
+            <tr>
+                <td>Attempted</td>
+                <td><span class="total-attempt">7</span></td>
+            </tr>
+            <tr>
+                <td>Correct</td>
+                <td><span class="total-correct">5</span></td>
+            </tr>
+            <tr>
+                <td>Wrong</td>
+                <td><span class="total-wrong">2</span></td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td><span class="total-score">4 / 10</span></td>
+            </tr>
+        </table>
+        <button type="button" class="btn" onclick="tryAgainQuiz()">Try Again</button>
+        <a href="../../content/contentHTML/sampleContent.html"><button class="btn" onclick="resetQuiz()">Back To Track</button></a>
+    </div>
+    <script src="../quizQues/KinematicsQuiz.js"></script>
+    <script src="../quizJs/QuizJS.js"></script>
+</body>
+</html>
