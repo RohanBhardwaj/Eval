@@ -14,7 +14,7 @@ let availableQuestions = [];
 let availableOptions = [];
 let correctAmswers = 0;
 let attempt =0;
-let startingMinutes = 15;
+let startingMinutes = 1;
 let time = startingMinutes*60;
 setInterval(updateTimer,1000);
 function updateTimer(){
@@ -122,7 +122,7 @@ function resetQuiz(){
     questionCounter =0;
     correctAmswers = 0;
     attempt =0;
-    startingMinutes = 15;
+    startingMinutes = 1;
     time = startingMinutes*60;
     getNewQuestion();
     //  availableQuestions = [];
@@ -135,8 +135,8 @@ function resetQuiz(){
 
 function tryAgainQuiz(){
     resetQuiz();
-    resultBox.classList.toggle("hide");
-    quizBox.classList.toggle("hide");
+    resultBox.classList.add("hide");
+    quizBox.classList.remove("hide");
     
 }
 
@@ -145,10 +145,12 @@ function startQuiz(){
     questionCounter =0;
     correctAmswers = 0;
     attempt =0;
+     startingMinutes = 1;
+    time = startingMinutes*60;
     setAvailableQuestions();
     getNewQuestion();
     StartBox.classList.toggle("hide");
-    quizBox.classList.toggle("hide");
+    quizBox.classList.remove("hide");
 }
 
 window.onload = function(){
