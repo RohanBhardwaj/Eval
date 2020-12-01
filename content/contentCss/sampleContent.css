@@ -8,7 +8,8 @@
 
 .navbar-brand {
     font-size: 22px;
-    color: white !important;
+    color: black !important;
+    font-family: 'Arial Narrow', 'Arial', 'sans-serif';
 }
 
 .navbar .navbar-nav li a {
@@ -29,4 +30,6 @@
 
 .jumbotron {
     margin-top: 110px;
+    text-align: center;
+    padding: 20px 0;
 }
