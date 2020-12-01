@@ -4,11 +4,16 @@ const optionContainer = document.querySelector(".option-container");
 const quizBox = document.querySelector(".quiz-box");
 const resultBox = document.querySelector(".result-box");
 const StartBox = document.querySelector(".box1");
+const tq= document.querySelector(".total-question")
+const noOfQues = document.querySelector(".noOfQues");
 
 let questionCounter =0;
 let currentQuestion;
 let availableQuestions = [];
 let availableOptions = [];
+let correctAmswers = 0;
+let attempt =0;
+
 
 function setAvailableQuestions(){
 const totalQuestion = quiz.length;
@@ -47,6 +52,7 @@ function getResult(element){
     if(id == currentQuestion.answer){
         console.log("answ corr");
         element.classList.add("correct");
+        correctAmswers++;
     }
     else{
         element.classList.add("wrong");
@@ -61,7 +67,7 @@ function getResult(element){
 
 
     }
-    
+    attempt++;
     unclickableOptions();
 }
 
@@ -88,16 +94,46 @@ function quizOver(){
 }
 
 function quizResult(){
+    tq.innerHTML = quiz.length;
+    document.querySelector(".total-attempt").innerHTML = attempt;
+    document.querySelector(".total-correct").innerHTML = correctAmswers;
+    const wrong = attempt - correctAmswers;
+    document.querySelector(".total-wrong").innerHTML = wrong;
+    document.querySelector(".total-time").innerHTML = "15min";
+    document.querySelector(".total-score").innerHTML = (correctAmswers-wrong*0.5) +" / " + quiz.length;
+
+}
+function resetQuiz(){
+    questionCounter =0;
+    correctAmswers = 0;
+    attempt =0;
+    getNewQuestion();
+    //  availableQuestions = [];
+    // availableOptions = [];
+
+}
+
+
+
+
+function tryAgainQuiz(){
+    resetQuiz();
+    resultBox.classList.toggle("hide");
+    quizBox.classList.toggle("hide");
     
 }
 
 
 function startQuiz(){
-  StartBox.classList.toggle("hide");
-  quizBox.classList.toggle("hide");
+    questionCounter =0;
+    correctAmswers = 0;
+    attempt =0;
+    setAvailableQuestions();
+    getNewQuestion();
+    StartBox.classList.toggle("hide");
+    quizBox.classList.toggle("hide");
 }
 
 window.onload = function(){
-    setAvailableQuestions();
-    getNewQuestion();
+    noOfQues.innerHTML = quiz.length;
 }

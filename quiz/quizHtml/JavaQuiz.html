@@ -9,7 +9,7 @@
 <body>
     <div class="box1">
         <h2>Instructions:</h2>
-        <p>Total number of questions: <strong>10</strong></p>
+        <p>Total number of questions: <strong><span class="noOfQues"></span></strong></p>
         <p>Only single correct answers <strong>No multi-correct</strong></p>
         <p>Read All the questions carefully!</p>
         <p>Each question carries 1 mark</p>
@@ -40,7 +40,7 @@
         <table>
             <tr>
                 <td>Total Question</td>
-                <td>10</td>
+                <td><span class="total-question"></span></td>
             </tr>
             <tr>
                 <td>Attempted</td>
@@ -63,8 +63,8 @@
                 <td><span class="total-score">4 / 10</span></td>
             </tr>
         </table>
-        <button type="button" class="btn">Try Again</button>
-        <button type="button" class="btn">Back To Track</button>
+        <button type="button" class="btn" onclick="tryAgainQuiz()">Try Again</button>
+        <a href="../../content/contentHTML/sampleContent.html"><button class="btn" onclick="resetQuiz()">Back To Track</button></a>
     </div>
     <script src="../quizQues/JavaQuiz.js"></script>
     <script src="../quizJs/QuizJS.js"></script>
