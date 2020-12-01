@@ -6,6 +6,7 @@ const resultBox = document.querySelector(".result-box");
 const StartBox = document.querySelector(".box1");
 const tq= document.querySelector(".total-question")
 const noOfQues = document.querySelector(".noOfQues");
+const timer = document.querySelector(".timer");
 
 let questionCounter =0;
 let currentQuestion;
@@ -13,6 +14,21 @@ let availableQuestions = [];
 let availableOptions = [];
 let correctAmswers = 0;
 let attempt =0;
+let startingMinutes = 15;
+let time = startingMinutes*60;
+setInterval(updateTimer,1000);
+function updateTimer(){
+    let minutes =Math.floor(time/60);
+    let seconds = time%60;
+    minutes = minutes<10 ? '0'+minutes : minutes;
+    seconds = seconds <10 ? '0'+seconds : seconds;
+    timer.innerHTML = `${minutes}:${seconds}`;
+    time--;
+    if(time==0){
+        quizOver();
+    }
+}
+
 
 
 function setAvailableQuestions(){
@@ -99,7 +115,6 @@ function quizResult(){
     document.querySelector(".total-correct").innerHTML = correctAmswers;
     const wrong = attempt - correctAmswers;
     document.querySelector(".total-wrong").innerHTML = wrong;
-    document.querySelector(".total-time").innerHTML = "15min";
     document.querySelector(".total-score").innerHTML = (correctAmswers-wrong*0.5) +" / " + quiz.length;
 
 }
@@ -107,6 +122,8 @@ function resetQuiz(){
     questionCounter =0;
     correctAmswers = 0;
     attempt =0;
+    startingMinutes = 15;
+    time = startingMinutes*60;
     getNewQuestion();
     //  availableQuestions = [];
     // availableOptions = [];

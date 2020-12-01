@@ -153,6 +153,15 @@ body{
 .result-box .btn{
     margin-right: 20px;
 }
+.question-number{
+    display: inline;
+    
+}
+.timer{
+    float: right;
+}
+
+
 @media(max-width: 767px){
     .result-box .btn{
         margin-bottom: 15px;
