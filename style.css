@@ -356,6 +356,7 @@ html {
 
 }
 
+
 /* Section-1 */
 .about > h1 {
     /* padding-top: 15vmin; */
@@ -453,12 +454,17 @@ color:#544d72;
 }
 
 .cover .content > h1 {
-    font-size: 6vmin;
+    padding-bottom: 0.1em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
     color: white;
+    font-size: 7vmin;
 }
   
 .cover .content > p {
-    font-size: 2vmin;
+    font-size: 3vmin;
     color: #e5e5e5;
 }
 
