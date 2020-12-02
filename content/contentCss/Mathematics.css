@@ -306,6 +306,8 @@ h2 {
 .pdf-card-content {
     padding: 2.5rem 3rem 0rem;
     text-align: center;
+    height: 450px;
+    overflow: scroll;
 }
 
 div {
