@@ -100,8 +100,9 @@ html {
 
 .header-btn:hover {
     border: 1px solid #dc3545;
-    color: #dc3545;
+    color: #dc3545!important;
     text-decoration: none;
+    font-weight: bolder;
     background: transparent;
 }
 
