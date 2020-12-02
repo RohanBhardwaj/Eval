@@ -307,7 +307,8 @@ h2 {
     padding: 2.5rem 3rem 0rem;
     text-align: center;
     height: 450px;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 div {
