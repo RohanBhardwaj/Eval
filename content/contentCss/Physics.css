@@ -368,3 +368,21 @@ a:-webkit-any-link {
 *:after {
     box-sizing: border-box;
 }
+
+
+/*video section*/
+
+#videoHeading {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.2rem;
+    text-align: center;
+}
+
+.video-thumbnail~p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.2rem;
+}
