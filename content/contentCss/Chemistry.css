@@ -323,7 +323,6 @@ body {
     line-height: 1.42857143;
     color: #454545;
     background-color: #fff;
-    padding-top: 3.5rem;
 }
 
 a:hover {
@@ -367,4 +366,22 @@ a:-webkit-any-link {
 *:before,
 *:after {
     box-sizing: border-box;
+}
+
+
+/*video section*/
+
+#videoHeading {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.2rem;
+    text-align: center;
+}
+
+.video-thumbnail~p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.1rem;
 }
