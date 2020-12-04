@@ -1,16 +1,17 @@
 //back to top button 
+$(window).load(function() {
+    $('.top-btn').fadeOut();
+});
 
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 50) {
-        $('#back-to-top').fadeIn();
+    if ($(this).scrollTop() != 0) {
+        $('.top-btn').fadeIn();
     } else {
-        $('#back-to-top').fadeOut();
+        $('.top-btn').fadeOut();
     }
 });
-// scroll body to 0px on click
-$('#back-to-top').click(function() {
-    $('body,html').animate({
-        scrollTop: 0
-    }, 400);
+
+$('.top-btn').click(function() {
+    $("html, body").animate({ scrollTop: 0 }, 900);
     return false;
 });
