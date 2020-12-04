@@ -7,6 +7,7 @@ const StartBox = document.querySelector(".box1");
 const tq= document.querySelector(".total-question")
 const noOfQues = document.querySelector(".noOfQues");
 const timer = document.querySelector(".timer");
+const header = document.querySelector(".header");
 
 let questionCounter =0;
 let currentQuestion;
@@ -104,6 +105,7 @@ function next(){
 }
 
 function quizOver(){
+    StartBox.classList.add("hide")
     quizBox.classList.add("hide");
     resultBox.classList.remove("hide");
     quizResult();
@@ -135,8 +137,8 @@ function resetQuiz(){
 
 function tryAgainQuiz(){
     resetQuiz();
-    resultBox.classList.add("hide");
-    quizBox.classList.remove("hide");
+    resultBox.classList.toggle("hide");
+    quizBox.classList.toggle("hide");
     
 }
 
@@ -145,12 +147,11 @@ function startQuiz(){
     questionCounter =0;
     correctAmswers = 0;
     attempt =0;
-     startingMinutes = 15;
-    time = startingMinutes*60;
     setAvailableQuestions();
     getNewQuestion();
+    header.classList.add("hide");
     StartBox.classList.toggle("hide");
-    quizBox.classList.remove("hide");
+    quizBox.classList.toggle("hide");
 }
 
 window.onload = function(){
