@@ -95,13 +95,15 @@ html {
     border-color: #dc3545;
     padding: 8px 17px;
     border-radius: 3px;
-    color: white;
+    font-weight: bolder;
+    color: white!important;
 }
 
 .header-btn:hover {
     border: 1px solid #dc3545;
-    color: #dc3545;
+    color: #dc3545!important;
     text-decoration: none;
+    font-weight: bolder;
     background: transparent;
 }
 
@@ -307,7 +309,8 @@ h2 {
     padding: 2.5rem 3rem 0rem;
     text-align: center;
     height: 450px;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 div {
