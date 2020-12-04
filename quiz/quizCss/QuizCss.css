@@ -16,7 +16,7 @@ body{
 }
 .box1{
     max-width: 700px;
-    margin: 50px auto;
+    margin: 90px auto;
     background-color: #ffffff;
     border-radius: 10px;
     padding: 30px;
@@ -41,7 +41,7 @@ body{
     margin-bottom: 10px;
 }
 
-.start-btn,.btn{
+.start-btnz,.btnz{
     margin-top: 4%;
     padding: 15px 45px;
     background-color: #004e92;
@@ -150,7 +150,7 @@ body{
     padding: 8px 15px;
     font-weight: 500;
 }
-.result-box .btn{
+.result-box .btnz{
     margin-right: 20px;
 }
 .question-number{
@@ -162,8 +162,12 @@ body{
 }
 
 
+#header-inner{
+    margin-top: -50px;
+}
+
 @media(max-width: 767px){
-    .result-box .btn{
+    .result-box .btnz{
         margin-bottom: 15px;
     }
 }
