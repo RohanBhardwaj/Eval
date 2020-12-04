@@ -385,3 +385,31 @@ a:-webkit-any-link {
     font-weight: 600;
     margin-top: 0.1rem;
 }
+
+element.style {
+    background-image: url(assets/img/gallery/section_bg01.png);
+}
+
+.section-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.pb-60 {
+    padding-bottom: 60px;
+}
+
+.pt-90 {
+    padding-top: 90px;
+}
+
+
+/*button back to top*/
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}

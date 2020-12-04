@@ -1,8 +1,16 @@
-// Toggle Animation by Class
+//back to top button 
+
 $(window).scroll(function() {
-    if ($(document).scrollTop() > 100) {
-        $('nav').addClass('animate');
+    if ($(this).scrollTop() > 50) {
+        $('#back-to-top').fadeIn();
     } else {
-        $('nav').removeClass('animate');
+        $('#back-to-top').fadeOut();
     }
-})
+});
+// scroll body to 0px on click
+$('#back-to-top').click(function() {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 400);
+    return false;
+});
