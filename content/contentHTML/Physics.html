@@ -61,10 +61,84 @@
                                 </li>
                             </ul>
                             <form class="form-inline my-2 my-lg-0 ml-2 align-self-stretch">
-                                <a href="#" class="header-btn">Sign In</a>
+                                <a href="#" class="header-btn" data-target="#modal" data-toggle="modal">Sign In</a>
                             </form>
                         </div>
                     </nav>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header text-center">
+                        <h3 class="modal-title w-100 dark-grey-text font-weight-bold">Sign In</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-lable="close">&times;</button>
+                    </div>
+
+                    <div class="modal-body mx-4">
+                        <div class="md-form">
+                            <label data-error="wrong" data-success="right">Enter Email-ID</label>
+                            <input type="email" class="form-control validate">
+                        </div>
+
+                        <div class="md-form mt-2">
+                            <label data-error="wrong" data-success="right">Enter Password</label>
+                            <input type="password" class="form-control validate">
+                            <p class="font-small blue-text d-flex justify-content-end mt-1"><a href="#" class="blue-text ml-1">Forgot Password?</a></p>
+                        </div>
+
+                        <div class="text-center mb-3">
+                            <button type="button" class="btn btn-block z-depth-1a" style="background-color: #352961; color: white;">Sign in</button>
+                        </div>
+                        <p class="font-small dark-grey-text d-flex justify-content-center">or Sign-In with:</p>
+
+                        <div class="row my-3 justify-content-center">
+                            <button type="button" class="btn z-depth-1a mr-2" style="width: 20%; background-color: #3b5998; color: white;"><i class="fab fa-facebook-f text-center"></i></button>
+                            <button type="button" class="btn z-depth-1a mr-2" style="width: 20%; background-color: #00acee; color: white;"><i class="fab fa-twitter text-center"></i></button>
+                            <button type="button" class="btn z-depth-1a" style="background-color: #db3236; width: 20%; color: white;"><i class="fab fa-google-plus-g text-center"></i></button>
+                        </div>
+
+                        <div class="text-center mb-3">
+                            New User? <a href="#" data-toggle="modal" data-target="#signupPage" data-dismiss="modal">Sign Up!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="signupPage">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header text-center">
+                        <h4 class="modal-title text-center w-100 font-weight-bold">Sign Up</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-lable="close">&times;</button>
+                    </div>
+                    <div class="modal-body mx-3">
+                        <div class="md-form mb-3">
+                            <i class="fas fa-user prefix grey-text mr-2"></i>
+                            <label data-error="wrong" data-success="right">Enter Name</label>
+                            <input type="text" class="form-control validate">
+                        </div>
+
+                        <div class="md-form mb-3">
+                            <i class="fas fa-envelope prefix grey-text mr-2"></i>
+                            <label data-error="wrong" data-success="right">Enter Email-ID</label>
+                            <input type="email" class="form-control validate">
+                        </div>
+
+
+                        <div class="md-form mb-3">
+                            <i class="fas fa-lock prefix grey-text mr-2"></i>
+                            <label data-error="wrong" data-success="right">Enter Password</label>
+                            <input type="password" class="form-control validate">
+                        </div>
+                    </div>
+
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button class="btn btn-block" style="background-color: #352961; color: white;">Sign Up</button>
+                    </div>
                 </div>
             </div>
         </div>
