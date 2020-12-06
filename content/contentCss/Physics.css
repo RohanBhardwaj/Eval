@@ -257,6 +257,9 @@ html {
     margin-left: 180px;
     margin-right: 180px;
     background-color: aquamarine;
+    box-shadow: #000;
+    background-image: url(/images/physics_jumbo.jpg);
+    background-size: cover;
 }
 
 
@@ -308,8 +311,8 @@ h2 {
 .pdf-card-content {
     padding: 2.5rem 3rem 0rem;
     text-align: center;
-    height: 450px;
-    overflow-y: scroll;
+    height: 400px;
+    overflow-y: auto;
     overflow-x: hidden;
 }
 
@@ -509,4 +512,70 @@ footer p {
     width: 20px;
     height: 20px;
     text-align: center;
+}
+
+
+/*card images*/
+
+.card {
+    border: none;
+}
+
+.card-img {
+    border-radius: 0;
+}
+
+.vgr-cards .card {
+    display: flex;
+    flex-flow: wrap;
+    flex: 100%;
+    margin-bottom: 40px;
+}
+
+.vgr-cards .card :nth-child(even) .card-img-body {
+    order: 2;
+}
+
+.vgr-cards .card :nth-child(even) .card-body {
+    padding-left: 0;
+    padding-right: 1.25rem;
+}
+
+.vgr-cards .card {
+    @media (max-width: 576px) {
+        display: block;
+    }
+}
+
+.card-img-body {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    @media (max-width: 576px) {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    @media (max-width: 1140px) {
+        margin: 0;
+        transform: none;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.card-body {
+    flex: 2;
+    padding: 0 0 0 1.25rem;
+    @media (max-width: 576px) {
+        padding: 0;
+    }
 }
