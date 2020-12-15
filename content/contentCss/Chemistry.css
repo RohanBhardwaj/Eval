@@ -258,7 +258,7 @@ html {
     margin-right: 180px;
     background-color: aquamarine;
     box-shadow: #000;
-    background-image: url(/images/chemistry_jumbo.jpg);
+    background-image: url(https://syngene-aws-storage01.s3.ap-south-1.amazonaws.com/wp-content/uploads/2020/09/18130614/Chemistry.jpg);
     background-size: cover;
 }
 
